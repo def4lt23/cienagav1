@@ -111,7 +111,6 @@ body{
     min-height: 100vh; /*tamaño del fondo, 100vh ocupa la ventana entera*/
     align-items: center;
     display: flex;
-    
     position: relative;
     overflow: hidden;
 }
@@ -253,6 +252,11 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
+.overlay1 h2 {
+    font-size: 5vw;
+}
+
 .overlay2 {
     position: absolute;
     top: 50%;
@@ -789,13 +793,11 @@ img {
     }
 
     .overlay2 img {
-        display: block;
-        max-height: 12vw;
-        padding-top: 25px;
+        display: none;
     }
 
     .seccionhorario {
-        background-size: 200%;
+        background-size: 250%;
         margin-bottom: 100px;
     }
 

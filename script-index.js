@@ -129,14 +129,17 @@ var translations = {
       "preg5":"¿EXISTE UN MEDIO DE TRANSPORTE PUBLICO PARA LLEGAR AL LOCAL?",
       "preg6":"¿TIENEN OPCIONES SIN TACC O PARA VEGANOS?",
       "preg7":"¿EL LOCAL CUENTA CON ACCESO PARA PERSONAS CON CAPACIDAD REDUCIDA?",
+      "preg8":"¿PUEDO LLAMAR A ALGUN TELÉFONO PARA OTRA CONSULTA?",
+
       "resp1":"No, el restaurante no trabaja con reservas. Debido a la alta demanda de clientes, decidimos darle prioridad directamente a las personas que llegan temprano.",
       "resp2":"El restaurante abre todos los días, de lunes a lunes, para almorzar. De lunes a viernes, desde el mediodía hasta las 16 hs. Los sábados y domingos, desde el mediodía hasta las 17 hs.",
       "resp3":"Los medios de pago son efectivo y tarjetas de débito y crédito (en un pago sin interés). NO SE RECIBEN TRANSFERENCIAS DE NINGÚN TIPO, esto se debe a que el local no cuenta con conexión WiFi y la señal de internet en el dique es escasa.",
       "resp4":"Al ser un lugar con bastante espacio y en lugar abierto, nosotros sí recibimos mascotas. Si el animal es muy grande o causa molestias a alguna otra persona cerca de la mesa, le vamos a pedir que se reubique o que retiren el animal.",
       "resp5":"No existe ningún colectivo que los deje hasta el restaurante. Lo que recomendamos es que, si son de San Salvador de Jujuy, tomen un colectivo hacia la terminal de ómnibus de 'El Carmen' y de ahí busquen algún remis particular hacia el restaurante. En verano suelen haber viajes especiales desde dicha terminal hasta el dique, pero desconocemos los horarios y en qué zona hacen paradas.",
       "resp6":"La carta está publicada tanto en la página web como en redes sociales. Para opciones sin TACC, puede consultar con los mozos la forma de cómo se prepara la comida. Para veganos, la opción sería elegir una milanesa de quesillo con algunas de las ensaladas. Más allá de los platos publicados, el restaurante no ofrece otro tipo de comida en particular.",
-      "resp7":"Sí, el restaurante cuenta con acceso para personas con movilidad reducida, así como también baños para personas con tal condición."
-      
+      "resp7":"Sí, el restaurante cuenta con acceso para personas con movilidad reducida, así como también baños para personas con tal condición.",
+      "resp8":"Sí, contamos con dos números de teléfonos: (+54)3884793243 y (+54)3884793273. No tenemos teléfono de línea en el restaurante."
+
   },
   "en": {
       "text1intro": "Welcome to our restaurant.",
@@ -173,14 +176,18 @@ var translations = {
       "preg5":"IS THERE PUBLIC TRANSPORTATION AVAILABLE TO REACH THE ESTABLISHMENT?",
       "preg6":"DO YOU HAVE OPTIONS WITHOUT GLUTEN OR FOR VEGANS?",
       "preg7":"DOES THE ESTABLISHMENT HAVE ACCESS FOR PEOPLE WITH REDUCED MOBILITY?",
+      "preg8":"CAN I CALL ANY PHONE FOR FURTHER INQUIRIES?",
+
       "resp1":"No, the restaurant does not take reservations. Due to high customer demand, we have decided to prioritize those who arrive early.",
       "resp2":"The restaurant is open every day, from Monday to Monday, for lunch. Monday to Friday from noon to 4 pm. On Saturdays and Sundays, from noon to 5 pm.",
       "resp3":"The accepted payment methods are cash and debit/credit cards (in one installment with no interest). NO TRANSFERS OF ANY KIND are accepted, as the establishment lacks Wi-Fi connection, and internet signal at the reservoir is scarce.",
       "resp4":"As a spacious and open-air venue, we do welcome pets. However, if the animal is too large or causes inconvenience to others nearby, we may kindly ask you to relocate or remove the animal.",
       "resp5":"There is no bus service directly to the restaurant. We recommend that if you are coming from San Salvador de Jujuy, take a bus to the bus terminal in El Carmen and then find a private taxi to the restaurant. In the summer, there are usually special trips from the terminal to the reservoir, but we are not aware of the schedules or specific stops.",
       "resp6":"The menu is posted on both the website and social media. For gluten-free options, you can inquire with the waitstaff about how the food is prepared. For vegans, the option would be to choose a quesillo milanesa with some of the salads. Beyond the dishes listed, the restaurant does not offer any other specific type of cuisine.",
-      "resp7":"Yes, the restaurant has access for people with reduced mobility, as well as bathrooms designed for individuals with such conditions."
-  },
+      "resp7":"Yes, the restaurant has access for people with reduced mobility, as well as bathrooms designed for individuals with such conditions.",
+      "resp8":"Yes, we have two phone numbers: (+54)3884793243 and (+54)3884793273. We do not have a landline phone at the restaurant."
+
+    },
   "pt": {
       "text1intro": "Bem-vindo ao nosso restaurante.",
       "text2intro": "Sua experiência junto à represa e suas colinas.",
@@ -216,14 +223,18 @@ var translations = {
       "preg5":"EXISTE TRANSPORTE PÚBLICO DISPONÍVEL PARA CHEGAR AO LOCAL?",
       "preg6":"VOCÊS TÊM OPÇÕES SEM GLÚTEN OU PARA VEGANOS?",
       "preg7":"O LOCAL TEM ACESSO PARA PESSOAS COM MOBILIDADE REDUZIDA?",
+      "preg8":"POSSO LIGAR PARA ALGUM TELEFONE PARA OUTRAS DÚVIDAS?",
+
       "resp1":"Não, o restaurante não aceita reservas. Devido à alta demanda de clientes, decidimos priorizar diretamente aqueles que chegam cedo.",
       "resp2":"O restaurante abre todos os dias, de segunda a segunda, para o almoço. De segunda a sexta, das 12h às 16h. Aos sábados e domingos, das 12h às 17h.",
       "resp3":"Os meios de pagamento aceitos são dinheiro e cartões de débito/crédito (em uma parcela sem juros). NÃO SÃO ACEITAS TRANSFERÊNCIAS DE NENHUM TIPO, pois o local não possui conexão Wi-Fi e o sinal de internet no dique é limitado.",
       "resp4":"Como um local amplo e ao ar livre, aceitamos animais de estimação. No entanto, se o animal for muito grande ou causar incômodo a outras pessoas próximas, podemos pedir gentilmente que o reposicionem ou retirem.",
       "resp5":"Não há ônibus que cheguem diretamente ao restaurante. Recomendamos que, se você estiver vindo de San Salvador de Jujuy, pegue um ônibus até a rodoviária de El Carmen e, de lá, procure um táxi particular até o restaurante. No verão, costumam haver viagens especiais da rodoviária até o dique, mas não temos informações sobre os horários ou paradas específicas.",
       "resp6":"O cardápio está disponível tanto no site quanto nas redes sociais. Para opções sem glúten, você pode consultar os garçons sobre como a comida é preparada. Para veganos, a opção seria escolher uma milanesa de quesillo com algumas das saladas. Além dos pratos listados, o restaurante não oferece nenhum outro tipo específico de culinária.",
-      "resp7":"Sim, o restaurante possui acesso para pessoas com mobilidade reduzida, bem como banheiros projetados para indivíduos com essa condição."
-  }
+      "resp7":"Sim, o restaurante possui acesso para pessoas com mobilidade reduzida, bem como banheiros projetados para indivíduos com essa condição.",
+      "resp8":"Sim, temos dois números de telefone: (+54)3884793243 e (+54)3884793273. Não temos telefone fixo no restaurante."
+
+    }
 };
 // Función para cambiar el idioma
 function changeLanguage(lang,button) {
@@ -279,6 +290,7 @@ function changeLanguage(lang,button) {
   var resp5 = document.querySelector('.accordion .resp5');
   var resp6 = document.querySelector('.accordion .resp6');
   var resp7 = document.querySelector('.accordion .resp7');
+  var resp8 = document.querySelector('.accordion .resp8');
 
   // Verificar si el idioma solicitado está en las traducciones
   if (translations.hasOwnProperty(lang)) {
@@ -401,6 +413,9 @@ function changeLanguage(lang,button) {
   }
   if (resp7) {
     resp7.textContent = translations[lang]["resp7"];
+  }
+  if (resp8) {
+    resp8.textContent = translations[lang]["resp8"];
   }
 
 

@@ -27,20 +27,7 @@ function mover(){
 },150);
 }
 
-//FUNCION ACORDEON DEJA DE SER VISIBLE SE CIERRE
-
-
-//FUNCION DE CARUSEL AUTOMATICO
-  $(document).ready(function () {
-    // Inicializar el carrusel
-    $('#miCarrusel').carousel();
-
-    // Configurar el carrusel para que se mueva automáticamente cada 3 segundos
-    setInterval(function () {
-      $('#miCarrusel').carousel('next');
-    }, 3000);
-  });
-
+//FUNCION QUE AGREGA COLOR A LA BARRA SUPERIOR
   $(document).ready(function () {
     var menuContainer = $('.menu.container');
 
@@ -48,16 +35,16 @@ function mover(){
         console.log('Scrolling...');
         if ($(window).scrollTop() > 0) {
             menuContainer.addClass('scrolled');
-            console.log('Se añadió la clase "scrolled"');
         } else {
             menuContainer.removeClass('scrolled');
-            console.log('Se quitó la clase "scrolled"');
         }
     });
 });
 
 //FUNCION PARA MOVER EL ACORDEON
 $(document).ready(function () {
+  var timeout;  // Variable para almacenar el identificador del temporizador
+
   // Lógica para manejar el clic en los botones del acordeón
   $('.accordion-button').click(function (event) {
     // Prevenir el comportamiento predeterminado del enlace (si es un enlace)
@@ -86,12 +73,17 @@ $(document).ready(function () {
       $('html, body').animate({
         scrollTop: finalScroll
       }, 'slow');
-    }, 500);
+    }, 1000);
   });
 
   // Verificar cuando se carga la página y al hacer scroll
   $(window).on('load scroll', function () {
-    cerrarAcordeonSiNoVisible();
+    clearTimeout(timeout);  // Limpiar el temporizador existente
+
+    // Establecer un nuevo temporizador después de 1 segundo
+    timeout = setTimeout(function () {
+      cerrarAcordeonSiNoVisible();
+    }, 1000);
   });
 
   // Función para cerrar el acordeón si no está visible
@@ -115,6 +107,7 @@ $(document).ready(function () {
     }
   }
 });
+
 
 //FUNCION PARA TRADUCIR LOS TEXTOS
 // Objeto que contiene las traducciones
