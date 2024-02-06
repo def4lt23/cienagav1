@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dique La Ciénaga</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icono.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script-index.js"></script>
+
+</head>
+<body>
+    <div class="up">
+        <span class="icon icon-up-open"></span>
+      </div> 
+
+    <header class="headerllegar">
+
+        <div class="menu container">
+          <div class="logoyidiomas">
+            <img src="images/logoblanco.png" alt="Logo" href="index.html" class="logoprin">
+            <div class="botoneraidiomas">
+                <button onclick="changeLanguage('es',this)" class="botonidioma activo">Español</button>
+                <button onclick="changeLanguage('en',this)" class="botonidioma">English</button>
+                <button onclick="changeLanguage('pt',this)" class="botonidioma">Português</button>
+            </div>
+        </div>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt=""> 
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="llegar.html">Como Llegar</a></li>
+                <li><a href="producto.html">Nuestros Platos</a></li>
+                <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="info-preguntas">
+        <div class="info-content-llegar container">
+          <br>
+            <h3 class="animate__animated animate__fadeInLeft titulopreg" style="font-family: 'Raleway', sans-serif;">
+              De Pregunta en Pregunta: Nuestra colección de respuestas elaboradas a las inquietudes más recurrentes
+            </h3>
+            <hr>
+            
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button preg1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                    ¿SE PUEDEN HACER RESERVAS?
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body-preg resp1">
+                  No, el restaurante no trabaja con reservas. Debido a la alta demanda de clientes, decidimos darle prioridad directamente a las personas que llegan temprano. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed preg2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                    ¿QUE DIAS ESTA ABIERTO EL RESTAURANTE?
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body-preg resp2">
+                  El restaurante abre todos los días, de lunes a lunes, para almorzar. De lunes a viernes, desde el mediodía hasta las 16 hs. Los sábados y domingos, desde el mediodía hasta las 17 hs.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed preg3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                    ¿CUALES SON LAS FORMAS DE PAGO?
+                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body-preg resp3">
+                  Los medios de pago son efectivo y tarjetas de débito y crédito (en un pago sin interés). NO SE RECIBEN TRANSFERENCIAS DE NINGÚN TIPO, esto se debe a que el local no cuenta con conexión WiFi y la señal de internet en el dique es escasa.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed preg4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                    ¿SE PERMITEN MASCOTAS EN EL LOCAL?
+                    <i class="fa fa-paw" aria-hidden="true"></i> 
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body-preg resp4">
+                    Al ser un lugar con bastante espacio y en lugar abierto, nosotros sí recibimos mascotas. Si el animal es muy grande o causa molestias a alguna otra persona cerca de la mesa, le vamos a pedir que se reubique o que retiren el animal.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed preg5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                     ¿EXISTE UN MEDIO DE TRANSPORTE PUBLICO PARA LLEGAR AL LOCAL?
+                     <i class="fa fa-bus" aria-hidden="true"></i>
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body-preg resp5">
+                    No existe ningún colectivo que los deje hasta el restaurante. Lo que recomendamos es que, si son de San Salvador de Jujuy, tomen un colectivo hacia la terminal de ómnibus de 'El Carmen' y de ahí busquen algún remis particular hacia el restaurante. En verano suelen haber viajes especiales desde dicha terminal hasta el dique, pero desconocemos los horarios y en qué zona hacen paradas.    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed preg6" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                    ¿TIENEN OPCIONES SIN TACC O PARA VEGANOS? <i class="fa fa-cutlery" aria-hidden="true"></i>
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                  <div class="accordion-body-preg resp6">
+                    La carta está publicada tanto en la página web como en redes sociales. Para opciones sin TACC, puede consultar con los mozos la forma de cómo se prepara la comida. Para veganos, la opción sería elegir una milanesa de quesillo con algunas de las ensaladas. Más allá de los platos publicados, el restaurante no ofrece otro tipo de comida en particular.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed preg7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                     ¿EL LOCAL CUENTA CON ACCESO PARA PERSONAS CON CAPACIDAD REDUCIDA?
+                     <i class="fa fa-wheelchair" aria-hidden="true"></i>
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                  <div class="accordion-body-preg resp7">
+                    Sí, el restaurante cuenta con acceso para personas con movilidad reducida, así como también baños para personas con tal condición.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed preg8" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven" style="font-family: 'Raleway', sans-serif; letter-spacing: 10px;">
+                     ¿PUEDO LLAMAR A ALGUN TELÉFONO PARA OTRA CONSULTA?
+                     <i class="fa fa-phone-square" aria-hidden="true"></i>
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                  <div class="accordion-body-preg resp8">
+                    Sí, contamos con dos números de teléfonos: (+54)3884793243 y (+54)3884793273. No tenemos teléfono de línea en el restaurante.
+                  </div>
+                </div>
+              </div>
+          </div>
+
+    </section>
+
+    <footer class="footer container">
+        <div class="footer-txt">
+            <p>
+                Seguinos para mas informacion
+            </p>
+            <div class="facebook">
+                <a href="https://www.facebook.com/p/Restaurant-Dique-La-Cienaga-100057336734836/" target="_blank"> <img src="images/iconface.png" alt=""></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/restaurantcienaga/?hl=es-la" target="_blank"> <img src="images/iconinsta.png" alt=""></a>
+            </div>
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=0543885737477" target="_blank"> <img src="images/iconwhat.png" alt=""></a>
+          </div>
+            <br>
+            <br>
+            <p>
+                Restaurant "Dique La Cienaga" - El Carmen - Jujuy - Republica Argentina
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

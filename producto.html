@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dique La Ciénaga</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icono.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+           <div class="up">
+             <span class="icon icon-up-open"></span>
+           </div> 
+    <header class="headerllegar">
+
+        <div class="menu container">
+          <div class="logoyidiomas">
+            <img src="images/logoblanco.png" alt="Logo" href="index.html" class="logoprin">
+            <div class="botoneraidiomas">
+                <button onclick="changeLanguage('es',this)" class="botonidioma activo">Español</button>
+                <button onclick="changeLanguage('en',this)" class="botonidioma">English</button>
+                <button onclick="changeLanguage('pt',this)" class="botonidioma">Português</button>
+            </div>
+        </div>
+          <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt=""> 
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="llegar.html">Como Llegar</a></li>
+                <li><a href="producto.html">Nuestros Platos</a></li>
+                <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <h2 class="animate__animated animate__fadeInRight" id="titulocarta">
+      Descubrí lo que tenemos para ofrecerte
+    </h2>
+    <br>
+
+    <div class="fila-portada">
+        <div class="columna">
+            <img src="images/tapa1.jpg" alt="Categoría 1" onclick="mover()" class="img-fluid" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+
+        </div>
+        <div class="columna">
+            <img src="images/tapa2.jpg" alt="Categoría 2" onclick="mover()" class="img-fluid" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+        </div>
+        <div class="columna">
+            <img src="images/tapa3.jpg" alt="Categoría 3" onclick="mover()" class="img-fluid" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+        </div>
+    </div>
+    <div class="fila-portada">
+        <div class="columna">
+            <img src="images/tapa4.jpg" alt="Categoría 4" onclick="mover()" class="img-fluid" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour">
+        </div>
+        <div class="columna">
+            <img src="images/tapa5b.jpg" alt="Categoría 5" onclick="mover()" class="img-fluid" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive">
+        </div>
+        <div class="columna">
+            <img src="images/tapa6.jpg" alt="Categoría 6" onclick="mover()" class="img-fluid" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix">
+        </div>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-center tit1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ENTRADAS
+              </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="rowentrada">
+                    <div>
+                       <div class="card">
+                          <img src="images/entradanueva1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text entrada1">
+                                Exquisitos aros de calamar, cuidadosamente seleccionados y rebozados en una masa crujiente. Sumérgelos en el aceite caliente para lograr una textura dorada y perfecta. Ideal para compartir, este entrante cautivará tu paladar con su frescura marina y su irresistible sabor a mar.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+                 
+
+                    <div>
+                        <div class="card">
+                            <img src="images/entradanueva2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                   <p class="card-text entrada2">
+                                    Descubre la frescura del mar en cada bocado con nuestros cornalitos fritos. Pescados pequeños de mar, envueltos en una ligera capa de harina y dorados a la perfección. Su tamaño compacto y su sabor intenso los convierten en la elección ideal para compartir y disfrutar en buena compañía.
+                                  </p>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div>
+                            <div class="card">
+                                <img src="images/entradanueva3.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                     <p class="card-text entrada3">
+                                      Nuestra Empanada Jujeña te invita a saborear la riqueza de la cocina regional. Con un relleno generoso de carne, papa y huevos, esta empanada frita en aceite captura la esencia de Jujuy en cada pliegue. Una experiencia gastronómica que fusiona tradición y sabor en cada bocado. ¡Déjate cautivar por la autenticidad del norte argentino!
+                                    </p>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div>
+                          <div class="card">
+                              <img src="images/entradanueva4.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                     <p class="card-text entrada4">
+                                      El suave quesillo de vaca, cuidadosamente rebozado en clara de huevo y pan molido, se cocina a la perfección en la plancha hasta alcanzar una textura dorada y crujiente. Acompañado de verduras frescas y una deliciosa salsa de choclo, este plato es una invitación a disfrutar de la armonía de sabores y texturas.
+                                    </p>
+                                  </div>
+                             </div>
+                          </div>
+                   
+                    </div>
+                </div>
+            </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-center tit2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                PESCADOS
+              </button>
+            </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="rowentrada">
+                    <div>
+                       <div class="card">
+                          <img src="images/pescadonuevo1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text pescado1">
+                                Deleita tu paladar con nuestra especialidad: Pejerrey al Soufflé. Este exquisito pescado de la zona es delicadamente rebozado con una masa ligera y frito hasta obtener una textura crujiente y dorada. Considerado el preferido por nuestros comensales, este plato es una experiencia inigualable. Se recomienda disfrutar de 3 a 4 unidades por persona para explorar plenamente su sabor único.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+                 
+
+                        <div>
+                          <div class="card">
+                              <img src="images/pescadonuevo2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                   <p class="card-text pescado2">
+                                    Nuestro Pejerrey 'al Natural' es la elección ideal para los amantes de la simplicidad y la autenticidad. Con una capa ligera de harina que realza su frescura, este plato resalta el sabor puro del pejerrey. Se recomienda disfrutar de 3 a 4 unidades por persona para una experiencia gastronómica completa.
+                                  </p>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div>
+                            <div class="card">
+                                <img src="images/pescadonuevo3.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                     <p class="card-text pescado3">
+                                      Disfruta de la simplicidad y la frescura con nuestro Pejerrey a la Plancha. Cocinado sin aditivos, este pescado de la zona se presenta a la perfección en su estado natural. Se recomienda servir de 3 a 4 unidades por persona para una experiencia gastronómica ligera y satisfactoria.
+                                    </p>
+                                  </div>
+                             </div>
+                          </div>
+            </div>
+
+            <br>
+
+            <div class="rowentrada">
+              <div>
+                 <div class="card">
+                    <img src="images/pescadonuevo4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text pescado4">
+                          Embárcate en una experiencia culinaria sublime con nuestro Pacú al limón. Este pescado de agua dulce, cuidadosamente cocinado a la plancha con un toque de limón y sal, ofrece una fusión equilibrada de sabores. Cada porción se presenta jugosa y llena de frescura, resaltando la calidad única del pacú. Disfruta de la simplicidad elevada a la perfección en cada bocado.
+                        </p>
+                      </div>
+                 </div>
+              </div>
+           
+
+                  <div>
+                    <div class="card">
+                        <img src="images/pescadonuevo5.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                             <p class="card-text pescado5">
+                              Sumérgete en los sabores frescos de nuestra Trucha al Limón. Cocinada con maestría y sazonada con limón y sal, cada bocado ofrece una experiencia única. La trucha, con su carne tierna y delicada, se presenta en su máxima expresión, resaltando la calidad de los ingredientes y la destreza culinaria. 
+                            </p>
+                          </div>
+                     </div>
+                  </div>
+
+                  <div>
+                      <div class="card">
+                          <img src="images/pescadonuevo6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <p class="card-text pescado6">
+                                Un plato que combina la simplicidad con la exquisitez. Porción de Trucha de mayor tamaño, cocinada a la perfección y resaltada con limón y sal, esta trucha ofrece un sabor puro y delicioso. Cada porción es una celebración de la frescura del agua y la calidad de nuestro enfoque culinario.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+      </div>
+      
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed text-center tit3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              CARNES
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="rowentrada">
+                <div>
+                   <div class="card">
+                      <img src="images/carnenueva1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text carne1">
+                            Embárcate en un viaje de sabores argentinos con nuestra Milanesa, una tradición que conquista paladares. La carne tierna y jugosa es cuidadosamente empanizada y frita a la perfección. El resultado es una textura crujiente por fuera y una suavidad irresistible por dentro. Esta Milanesa es un homenaje a la simplicidad y al sabor auténtico.
+                          </p>
+                        </div>
+                   </div>
+                </div>
+             
+
+                    <div>
+                      <div class="card">
+                          <img src="images/carnenueva2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <p class="card-text carne2">
+                                Disfruta de la extravagancia de nuestra Milanesa Napolitana, una fusión de sabores que eleva la clásica Milanesa a nuevas alturas. La carne jugosa, empanizada y frita con maestría, se cubre con salsa de tomate y queso derretido. Cada bocado es una explosión de sabores que celebra la herencia italiana en la cocina argentina.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <img src="images/carnenueva3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text carne3">
+                                  Descubre la perfección en cada corte con nuestro Bife de Lomo, una experiencia gastronómica que rinde homenaje a la maestría de la parrilla argentina. La suavidad del lomo se combina con el arte de la cocción a la plancha para ofrecer un bocado inigualable. Un toque de limón y sal resalta los matices de este corte premium, creando una experiencia única para los amantes de la carne. Tambien preparamos bife de pollo para aquellos que disfruten el sabor de la carne blanca.
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+        </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed text-center tit4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              GUARNICIONES
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+              <div class="rowentrada">
+                <div>
+                   <div class="card">
+                      <img src="images/guarnicionnueva1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text guarnicion1">
+                            Disfruta de un festín de sabores con nuestras Papas Fritas con Huevos Revueltos. Las papas crujientes se combinan con huevos revueltos, creando una mezcla irresistible. La combinación de texturas y el sabor reconfortante hacen de esta porción la opción perfecta para compartir con tu plato principal.
+                          </p>
+                        </div>
+                   </div>
+                </div>
+             
+
+                    <div>
+                      <div class="card">
+                          <img src="images/guarnicionnueva2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <p class="card-text guarnicion2">
+                                Descubre el encanto de nuestras Papas Fritas a la Provenzal, una reinterpretación elegante de un clásico. Las papas fritas se mezclan con ajo y perejil, creando una combinación deliciosa. Esta porción, pensada para compartir, es el acompañamiento perfecto para quienes buscan una experiencia gastronómica refinada y llena de sabores frescos.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <img src="images/guarnicionnueva3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text guarnicion3">
+                                  Disfruta de la opulencia en cada bocado con nuestras Papas Fritas Gratinadas. Las papas crujientes se transforman en una experiencia decadente con el toque irresistible del queso gratinado. La porción sugerida para compartir te permite explorar la riqueza de sabores y texturas en buena compañía, creando un momento culinario inolvidable.
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+              </div>
+
+              <br>
+
+        <div class="rowentrada">
+
+          <div>
+             <div class="card">
+                <img src="images/guarnicionnueva4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text guarnicion4">
+                      Explora una explosión de frescura y color con nuestra Ensalada Completa. Una mezcla armoniosa de lechuga, tomate, papas tiernas, remolacha, zanahorias y huevos cocidos. Cada ingrediente se combina para crear una sinfonía de sabores y texturas. Perfecta como plato principal o acompañamiento, esta ensalada completa es una opción equilibrada y deliciosa para aquellos que buscan una experiencia culinaria completa.
+                    </p>
+                  </div>
+             </div>
+          </div>
+       
+
+              <div>
+                <div class="card">
+                    <img src="images/guarnicionnueva5.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                         <p class="card-text guarnicion5">
+                          Descubre la elegancia en cada hoja con nuestra Ensalada de Hojas Verdes. La rúcula y la achicoria se combinan en un baile de sabores intensos, realzados por la adición de queso parmesano finamente rallado. Esta ensalada es un tributo a la frescura y la simplicidad, creando una experiencia gourmet que cautivará tu paladar.
+                        </p>
+                      </div>
+                 </div>
+              </div>
+
+              <div>
+                  <div class="card">
+                      <img src="images/guarnicionnueva6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <p class="card-text guarnicion6">
+                            Explora la simplicidad reconfortante de nuestra Ensalada de Verduras Hervidas. Papas, remolacha, zanahorias y huevos se presentan en su máximo esplendor, resaltando la exquisitez de las verduras frescas y bien cocidas. La porción recomendada para compartir permite disfrutar de este plato como una opción saludable y deliciosa para acompañar tus comidas.
+                          </p>
+                        </div>
+                   </div>
+                </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed text-center tit5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              BEBIDAS
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="rowentrada">
+
+                <div>
+                   <div class="card">
+                      <img src="images/bebidanueva1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text bebida1">
+                            Gaseosas de la linea Coca-Cola. Ofrecemos envases de 1.5Lt, como también individuales.
+                          </p>
+                        </div>
+                   </div>
+                </div>
+             
+
+                    <div>
+                      <div class="card">
+                          <img src="images/bebidanueva2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <p class="card-text bebida2">
+                                Aguas saborizadas de pera, manzana, naranja y limón. Ofrecemos envases de 1.5Lt, como también individuales.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <img src="images/bebidanueva3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text bebida3">
+                                  Botellas de agua con y sin gas. Ofrecemos envases de 1.5Lt, como también individuales.
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+                </div>
+
+                <br>
+
+                <div class="rowentrada">
+                  <div>
+                     <div class="card">
+                        <img src="images/bebidanueva4.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text bebida4">
+                              Cervezas de reconocidas marcas, tanto en envases de 1Lt como también en latas.
+                            </p>
+                          </div>
+                     </div>
+                  </div>
+               
+
+                      <div>
+                        <div class="card">
+                            <img src="images/bebidanueva5.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text bebida5">
+                                  Gran variedad de vinos tintos y blancos. Ofrecemos botellas de 3/4 y 3/8.
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+
+                      <div>
+                          <div class="card">
+                              <img src="images/bebidanueva6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                   <p class="card-text bebida6">
+                                    Medidas de bebidas alcoholicas como ser Fernet, Gancia y Whisky.
+                                  </p>
+                                </div>
+                           </div>
+                        </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed text-center tit6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              POSTRES
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="rowentrada">
+
+                <div>
+                   <div class="card">
+                      <img src="images/postrenuevo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text postre1">
+                            Culmina tu experiencia gastronómica con nuestro irresistible Flan Casero, una obra maestra de la dulzura. Este postre clásico fusiona la suavidad sedosa del flan con el caramelo dorado que lo envuelve. Cada cucharada revela la perfección de nuestra receta casera, un deleite indulgente que captura la esencia reconfortante de los postres tradicionales.
+                          </p>
+                        </div>
+                   </div>
+                </div>
+             
+
+                    <div>
+                      <div class="card">
+                          <img src="images/postrenuevo2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <p class="card-text postre2">
+                                Embárcate en un viaje de sabores nostálgicos con nuestro Budín de Pan, exquisitez la textura esponjosa del pan. Este postre, cocinado con mimo, es una invitación a degustar la calidez de los recuerdos culinarios. Déjate llevar por la comodidad y el sabor reconfortante.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <img src="images/postrenuevo3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text postre3">
+                                  Sumérgete en la ligereza celestial de nuestra Isla Flotante, un postre que eleva la experiencia dulce a nuevas alturas. Claras de huevos cocinadas al horno y con un baño Maria, crean una combinación etérea de texturas y sabores. Permite a los comensales disfrutar juntos de esta experiencia única que equilibra lo indulgente con lo etéreo.
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+
+                      <div>
+                        <div class="card">
+                            <img src="images/postrenuevo4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text postre4">
+                                  Concluye tu experiencia culinaria con nuestra refrescante Ensalada de Frutas, una sinfonía de sabores vibrantes y colores exuberantes. La combinación cuidadosa de frutas frescas, se presenta en una mezcla jugosa y llena de vitalidad. Perfecta como opción ligera y saludable, esta ensalada es la elección ideal para cerrar tu comida con un toque fresco y delicioso. 
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+              </div>
+
+              <br>
+
+              <div class="rowentrada">
+                <div>
+                   <div class="card">
+                      <img src="images/postrenuevo5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text postre5">
+                            Concluye tu comida con nuestra irresistible Copa de Helado de reconocida marca local, una experiencia que combina la cremosidad del helado con la riqueza de los acompañamientos. Las suaves bolas de helado se realzan con salsas decadentes y una mezcla de texturas y sabores.
+                          </p>
+                        </div>
+                   </div>
+                </div>
+             
+
+                    <div>
+                      <div class="card">
+                          <img src="images/postrenuevo6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <p class="card-text postre6">
+                                Descubre la simplicidad elegante de nuestros Quesillos con Cayote o Miel de caña, una combinación única que resalta la suavidad del quesillo y la dulzura natural. Este postre, cuidadosamente preparado, ofrece una experiencia que fusiona la tradición con la creatividad.
+                              </p>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <img src="images/postrenuevo7.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <p class="card-text postre7">
+                                  Embárcate en una experiencia única con nuestra creación exclusiva, la "Copa La Ciénaga". Un festín de sabores y texturas que combina la indulgencia del dulce de leche con la frescura de la ensalada de frutas, la suavidad del helado y la cremosidad de la crema. Cada capa se entrelaza en una danza de sabores, mientras las galletitas obleas aportan la crujiente armonía perfecta. La porción sugerida para compartir permite a todos disfrutar de esta obra maestra culinaria que lleva el nombre de nuestro restaurante.
+                                </p>
+                              </div>
+                         </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="botondrive">
+      <h3 style="font-family: 'Raleway', sans-serif;" class="msjcarta1">
+        Descarga nuestra carta con los precios en el siguiente enlace de GoogleDrive
+      </h3>
+      <br>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="https://drive.google.com/drive/folders/1KxqQ66-KPUqB9zJS85qcER0vPUwOXUYE?usp=sharing" target="_blank">
+          <button class="btn btn-primary" type="button" style="background-color: #129490;">Click aqui</button>
+        </a>
+      </div>
+      <br>
+      <h6 style="color: #ECECEC; font-family: 'Raleway', sans-serif;" class="msjcarta2">
+        *Valor de los precios en pesos argentinos
+      </h6>
+    </div>
+
+    <footer class="footer container">
+        <div class="footer-txt">
+          <p>
+            Seguinos para mas informacion y escribinos
+        </p>
+        <div class="facebook">
+            <a href="https://www.facebook.com/p/Restaurant-Dique-La-Cienaga-100057336734836/" target="_blank"> <img src="images/iconface.png" alt=""></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/restaurantcienaga/?hl=es-la" target="_blank"> <img src="images/iconinsta.png" alt=""></a>
+        </div>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=0543885737477" target="_blank"> <img src="images/iconwhat.png" alt=""></a>
+      </div>
+        <br>
+        <br>
+        <p>
+            Restaurant "Dique La Cienaga" - El Carmen - Jujuy - Republica Argentina
+        </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

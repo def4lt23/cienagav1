@@ -1,0 +1,964 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*logo principal*/
+.logoprin {
+    width: 250px;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botoneraidiomas {
+    text-align: center;
+    justify-items:center;
+}
+
+.botonidioma {
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 15px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.activo {
+    background-color: white; /* Color de fondo al seleccionar */
+    color: black; /* Color del texto al seleccionar */
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*carrusel*/
+.carousel.fade .carousel-inner {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel.fade .carousel-inner .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel.fade .carousel-inner .carousel-item.active,
+  .carousel.fade .carousel-inner .carousel-item-next.carousel-item-left,
+  .carousel.fade .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+  }
+  
+  .carousel.fade .active.carousel-item-left,
+  .carousel.fade .active.carousel-item-right {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+/*Boton de subir arriba*/
+.up {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E45E4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/*INDEX*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #202123;
+}
+
+.animate__slow {
+    --animate-duration: 5s; /*duracion del texto arriba del carrusel*/
+}
+
+.container {
+    max-width: 2500px; /*ancho de la barra superior*/
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/bg8.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; /*tamaño del fondo, 100vh ocupa la ventana entera*/
+    align-items: center;
+    display: flex;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.headerllegar{
+    background-image: url(images/portada3.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh; /*tamaño del fondo, 100vh ocupa la ventana entera*/
+    align-items: center;
+    display: flex;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.menu{
+    position: fixed; /*que se muestre a lo largo de la pagina el navbar*/
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*que se muestre el fondo en el navbar al hacer scroll*/
+.menu.container {
+    background-color: transparent; /* Color de fondo inicial */
+    transition: background-color 0.3s ease;
+    /* Otras propiedades de estilo para la posición inicial */
+}
+
+.menu.container.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia al color de fondo deseado cuando el menú se desplaza */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según sea necesario */
+    /* Otras propiedades de estilo para la posición desplazada */
+}
+
+/*CARRUSEL DEL INDEX*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    flex-basis: 200;
+}
+
+.cuadrado,
+.rectangulo {
+    margin: 10px;
+    flex-basis: 200;
+}
+
+.cuadrado img{
+    width: 100%; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Ajusta el tamaño según tus necesidades */
+    object-fit: cover;
+}
+
+.carrusel {
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.carrusel img {
+    width: 100%; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Ajusta el tamaño según tus necesidades */
+    object-fit: cover;
+}
+
+/**/
+
+.separator {
+    width: 100%;
+    height: 2px; /* Altura de la línea */
+    background-color: white;
+}
+
+/***1***/
+.seccionhorario {
+    position: relative;
+    height: 130vh; /* Ajusta la altura según tus necesidades */
+    background: url('images/bg4.jpg') center/cover no-repeat; /* Ajusta la ruta de la imagen */
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    width: 50%; /* Cubre exactamente la mitad de la pantalla */
+    height: 50%;
+    background: #202123;
+    color: #fff; /* Color del texto (ajusta el color según sea necesario) */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%; /* Cubre exactamente la mitad de la pantalla */
+    height: 50%;
+    background: #202123;
+    color: #fff; /* Color del texto (ajusta el color según sea necesario) */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay2 p {
+    font-size: 2.35em;
+    margin: 10px;
+}
+
+/* Estilo adicional para centrar el texto en el overlay */
+.seccionhorario h2, h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.seccionhorario img {
+    width: 60px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: block;
+    max-height: 50vw;
+}
+
+.dias {
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Raleway', sans-serif;
+    transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves para el efecto */
+}
+
+.detalle {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+/***0***/
+
+#menu {
+    display: none;
+
+}
+
+.menu-icono {
+    width: 25px;
+
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+
+}
+
+.header-txt h1{
+    font-size: 55px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    padding-top: 60px;
+}
+
+.header-txt p {
+    color: #bebebe;
+    font-size: 40px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+    text-shadow: #000;
+
+}
+
+
+
+.general-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+
+}
+
+.general-1 {
+    background-image: url(images/r1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+
+}
+
+.general-2 {
+    background-image: url(images/r2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+
+}
+
+.general-3 {
+    background-image: url(images/r3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+
+}
+
+.general-4 {
+    background-image: url(images/r4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+}
+
+.general-5 {
+    background-image: url(images/r5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+
+}
+
+.general-6 {
+    background-image: url(images/r6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+
+}
+
+.textoentrada {
+    font-size: 60PX;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 70px;
+    color: #1b293a;
+
+}
+
+.especialidad h2 {
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 2500px;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+.general {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.txt h3 {
+    font-size: 18px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.txt p {
+    color: #EBEBEB;
+    font-size: 16px;
+
+}
+
+.reloj{
+    width: 100px;
+    height: auto;
+}
+
+.info-1 {
+    padding: 250px 0;
+    background-image: url(images/bg222.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.textohorario {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves para el efecto */
+    padding-left: 200px;
+
+}
+
+.textohorario h2, span {
+    color: #FFFDFC;
+    font-size: 50px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.textohorario h2 {
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+    font-size: 70px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.textohorario .hortitulo {
+    color: #FFFDFC;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.textohorario .hortexto {
+    color: #FFFDFC;
+    font-size: 30px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.info-2 {
+    padding: 250px 0;
+    background-image: url(images/bg3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+.footer {
+    padding: 1px 0 0 0;
+    text-align: center;
+
+}
+
+.footer h2, p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form {
+    margin-top: 35px;
+
+}
+
+.botonmail {
+    background-color: #129490;
+    color: #ECECEC;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 20px;
+    margin: 5px;
+}
+
+.campo {
+    margin-right: 10px;
+    padding: 17px 35px;
+    border: 2px solid #b4b4b4;
+    outline: none;
+    color: #1b293a;
+
+}
+
+.campo::placeholder {
+    color: #b4b4b4;
+
+}
+
+.btn-2 {
+    padding: 17px 35px;
+    border: 2px solid #1b293a;
+    color: #FFFDFC;
+    background-color: #1b293a;
+}
+
+.footer-txt {
+    margin-top: 100px;
+    border-top: 1px solid #b4b4b47e;
+    padding: 10px 0;
+    background-color: #129490;
+}
+
+.footer-txt img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-txt p {
+    color: #fff;
+}
+
+.footer-txt div {
+    display: inline-block;
+}
+
+/*PRODUCTOS*/
+* {
+    box-sizing: border-box;
+}
+
+.columna {
+    float: left;
+    width: 33.33%;
+}
+
+.fila::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fila-portada::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.acordeon {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho según tus necesidades */
+    margin: 20px auto;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    border: 1px solid #3d1313;
+    margin-bottom: 5px;
+    background-color: #dd0b0b;
+}
+
+.panel p {
+    margin: 0;
+}
+
+.img-fluid{
+    cursor: pointer;
+}
+
+.rowentrada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    margin: 10px;
+    max-width: 350px;
+    flex-grow: 1;
+    flex-basis: 500;
+}
+
+.card img {
+    height: 325px;
+    width: 325px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-text {
+    color: #202123;
+}
+
+.info-llegar h2{
+    color: #000;
+}
+
+.info-llegar h3, h5 {
+    color: #ECECEC;
+    font-family: 'Raleway', sans-serif;
+}
+
+.resaltado1 , .resaltado2{
+    background-color: #129490; /* Puedes ajustar el color de fondo según tus preferencias */
+    padding: 2px; /* Ajusta el relleno según sea necesario */
+    border-radius: 1px;
+    font-size: 20px;
+}
+
+.info-content-llegar {
+    text-align: center;
+}
+
+.botondrive {
+    align-items: center;
+    text-align: center;
+}
+
+.accordion-button{
+    font-size: 30px;
+    border-top: 1px solid #ECECEC;
+}
+
+.accordion-body {
+    font-size: 20px;
+}
+
+.accordion-item:last-child .accordion-button {
+    border-bottom: 1px solid #ECECEC;
+}
+
+/****1****/
+#titulocarta {
+    color: #ECECEC;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+/****0****/
+
+/*****1*****/
+.accordion { /*platos*/
+    --bs-accordion-btn-bg: #202123; /*color del acordeon cerrado*/
+    --bs-accordion-active-bg: #202123; /*color del acordeon abierto*/
+    --bs-accordion-btn-color: #ECECEC; /*color de texto acordeon cerrado*/
+    --bs-accordion-active-color: #ECECEC; /*color de texto acordeon abierto*/
+    --bs-accordion-bg: #202123; /*color del fondo del acordeon*/
+    --bs-accordion-btn-icon: #ECECEC;
+}
+
+#accordionPanelsStayOpenExample {
+    --bs-accordion-bg: #129490; /*color del fondo del acordeon*/
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+}
+
+.accordion-button{
+    box-shadow: none;
+    display:block;
+}
+/*****0*****/
+
+.accordion-body-preg {
+    font-size: 20px;
+    color: #ECECEC;
+    padding: 20px;
+}
+
+/*################################################################################################*/
+/*################################################################################################*/
+/*################################################################################################*/
+
+/*RESPONSIVE*/
+
+/*INDEX*/
+
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: none;
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .especialidad h2 {
+        font-size: 25px;
+        color: #ECECEC;
+    }
+
+    .overlay2 p {
+        font-size: 25px;
+    }
+
+    .overlay2 img {
+        display: block;
+        max-height: 12vw;
+        padding-top: 25px;
+    }
+
+    .seccionhorario {
+        background-size: 200%;
+        margin-bottom: 100px;
+    }
+
+    .textoentrada {
+        font-size: 25px;
+    }
+
+    .carrusel {
+        width: 100%; /*contenedor de los slides*/
+    }
+
+    .info-llegar {
+        margin-bottom: 150px;
+    }
+
+    .info-preguntas {
+        margin-bottom: 150px;
+    }
+
+    .botondrive {
+        margin-bottom: 150px;
+    }
+
+    .header{
+        min-height: 20vh;
+    }
+
+    .header-txt p {
+        padding: 0;
+
+    }
+
+    .general {
+        padding: 30px 30px 0 30px;
+
+    }
+
+    .general-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    .general-1,
+    .general-2,
+    .general-3,
+    .general-4,
+    .general-5,
+    .general-6 {
+        height: 350px;
+        padding: 100px 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .info-1 {
+        padding: 200px 30px;
+        background-size: cover;
+        margin-top: -110px;
+
+    }
+
+    .info-circle {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .circle-txt {
+        width: 100%;
+        margin-bottom: 25px;
+
+    }
+
+    .g2 {
+        margin-top: -120px;
+
+    }
+
+    .info-2 {
+        padding: 280px 30px;
+        background-size: cover;
+        margin-top: -180px;
+
+    }
+
+    .testi {
+        flex-direction: column;
+
+    }
+
+    .testi-left {
+        width: 100%;
+        padding-right: 0;
+
+    }
+
+    .testi-right {
+        width: 100%;
+        padding-left: 0;
+
+    }
+
+    h2 {
+        font-size: 40px;
+        color: blue;
+    }
+
+    .footer {
+        padding: 0;
+        margin-top: -140px;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+
+    }
+
+    .campo {
+        margin: 0 0 10px 0;
+
+    }
+
+    .footer-txt {
+        margin-top: 30px;
+
+    }
+
+    .columna {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logoprin {
+        height: 100px;
+        width: auto;
+    }
+
+    .galeria {
+        flex-direction: column; /* Cambiar a una disposición de columna en pantallas más pequeñas */
+    }
+
+    .fila {
+        flex-direction: column; /* Cambiar a una disposición de columna en pantallas más pequeñas */
+    }
+
+    .rectangulo {
+        width: 100%; /* Ocupar el ancho completo de la pantalla en dispositivos móviles */
+        height: auto;
+    }
+
+    .cuadrado {
+        max-width: 350px;
+        max-width: 350px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
